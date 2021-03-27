@@ -4,8 +4,8 @@
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
   --color-dark-white: #bdbdbd;
-  --color-pink: #fe918d;
-  --color-dark-pink: #ff6863;
+  --color-pink: #e07cdd;
+  --color-dark-pink: #f171ac;
   --color-dark-grey: #4d4d4d;
   --color-grey: #616161;
   --color-light-grey: #7c7979;
@@ -74,12 +74,20 @@ button {
 /*Navbar*/
 #navbar {
   display: flex;
+  position: fixed;
+  width: 100%;
   justify-content: space-between;
-  background-color: var(--color-pink);
+  background-color: transparent;
   align-items: center;
   color: var(--color-white);
   padding: 16px;
+  transition: all var(--animation-duration) ease-in-out;
 }
+#navbar.navbar--dark {
+  background: var(--color-pink);
+  padding: 8px;
+}
+
 body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
@@ -125,6 +133,7 @@ ul {
 #home {
   background: url("imgs/home-background-img.png") center/cover no-repeat;
   padding: 40px;
+  padding-top: 110px;
   text-align: center;
 }
 .home__avatar {
