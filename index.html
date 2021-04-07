@@ -34,14 +34,16 @@
     </nav>
     <!-- home -->
     <section id="home">
-        <img 
-            class="home__avatar" 
-            alt="UNNEW's profile photo" 
-            src="imgs/profile.png"
-        >
-        <h1 class="home__title">Hello,<br/>I'm UNNEW</h1>
-        <h2 class="home__description">A Student studying the Front-End in Hansei Univ.</h2>
-        <button class="home__contact">CONTACT ME</button>
+        <div class="home__container">
+            <img 
+                class="home__avatar" 
+                alt="UNNEW's profile photo" 
+                src="imgs/profile.png"
+            >
+            <h1 class="home__title">Hello,<br/>I'm UNNEW</h1>
+            <h2 class="home__description">A Student studying the Front-End in Hansei Univ.</h2>
+            <button class="home__contact" data-link="#contact">CONTACT ME</button>
+        </div>
     </section>
     <!-- about -->
     <section id="about" class="section section_container">
@@ -237,5 +239,10 @@
             <p class="conntact__rights">2021 UNNEW - All rights reserved</p> 
         </div>
     </section>
+
+    <!-- Arrow-->
+    <button class="arrowBtn">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 </body>
 </html>

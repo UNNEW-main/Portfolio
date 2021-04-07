@@ -123,11 +123,17 @@ ul {
 }
 .navbar__toggle-btn {
   position: absolute;
-  top: 22px;
+  top: 8px;
   right: 32px;
   font-size: 24px;
   color: var(--color-white);
   display: none;
+  padding: 16px;
+  transition: all var(--animation-duration) ease-in-out;
+  z-index: 1;
+}
+.navbar__toggle-btn.dark {
+  padding: 8px;
 }
 
 /*home*/
@@ -137,6 +143,7 @@ ul {
   padding-top: 110px;
   text-align: center;
 }
+
 .home__avatar {
   width: 250px;
   height: 250px;
@@ -421,6 +428,29 @@ ul {
 .contact__links i:hover {
   transform: scale(1.1);
   color: var(--color-yellow);
+}
+
+/*Arrow Button*/
+.arrowBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 35px;
+  opacity: 0;
+  height: 50px;
+  width: 50px;
+  color: var(--color-white);
+  background-color: var(--color-orange);
+  border-radius: 50%;
+  transition: all var(--animation-duration) ease-in-out;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.arrowBtn.dark {
+  bottom: 24px;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* For below 768px screen width*/
