@@ -68,9 +68,9 @@ document.addEventListener('scroll', ()=>{
         arrowBtn.classList.remove('dark');
     }
 });
-arrowBtn.addEventListener('click', ()=>{
-    scrollIntoView('#home');
-});
+arrowBtn.addEventListener('click', ()=>
+    scrollIntoView('#home')
+);
 
 
 const workBtnContainer = document.querySelector('.work__categories');
